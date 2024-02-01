@@ -1,0 +1,63 @@
+body{
+    background-image: url("bg.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.heart-container {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.heart {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.heart-container:hover .heart {
+	opacity: 1;
+}
+
+.text {
+	position: absolute;
+	top: 95%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.heart-container:hover .text {
+	opacity: 1;
+}
+
+#response {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    color:  red;
+    text-align: center;
+    display: none;
+    background-image: url("hart.webp");
+    background-size: 80px 50px;
+
+}
